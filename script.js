@@ -10,4 +10,5 @@ function sayHi(greeting) {
 }
 function sayBye(farewell) {
   console.log("Goodbye!");
+  console.log("Goodbye!");
 }
