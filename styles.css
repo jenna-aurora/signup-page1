@@ -37,7 +37,6 @@ h1 {
 }
 label {
   display: block;
-  margin-top: 16px;
   font-weight: bold;
 }
 
@@ -52,7 +51,6 @@ textarea {
 
 button {
   border: 2px dashed tomato;
-  margin-top: 16px;
   padding: 10px 20px;
   font: inherit;
 }
@@ -65,4 +63,39 @@ textarea:focus {
 
 input:user-invalid {
   border: 2px solid tomato;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 30rem;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: aliceblue;
+  color: black;
+  padding: 4px;
+  border-radius: 6px;
+}
+html {
+  scroll-behavior: smooth;
+}
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 24px;
 }
