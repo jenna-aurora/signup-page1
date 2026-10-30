@@ -99,3 +99,19 @@ main {
   margin: 0 auto;
   padding: 0 24px;
 }
+.hero {
+  text-align: center;
+  padding: 64px 24px;
+  background-color: aliceblue;
+  border: 1px solid cornflowerblue;
+  border-radius: 8px;
+}
+.cta {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: cornflowerblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
