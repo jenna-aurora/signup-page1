@@ -115,3 +115,8 @@ main {
   text-decoration: none;
   border-radius: 8px;
 }
+@media (min-width: 700px) {
+  .hero h2 {
+    font-size: 3rem;
+  }
+  
