@@ -96,17 +96,21 @@ nav {
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
 }
 nav a {
   text-decoration: none;
   color: var(--text); 
   font-weight: bold;
+  padding: 8px 16px;
 }
 nav a:hover {
   background-color: var(--brand);
   color: var(--text);
   padding: 4px;
   border-radius: 6px;
+  outline: 2px solid var(--outline);
 }
 html {
   scroll-behavior: smooth;
@@ -136,3 +140,15 @@ main {
   .hero h2 {
     font-size: 3rem;
   }
+header { 
+  text-align: center;
+  padding: 32px 24px;
+  background-color: var(--page-bg);
+  border: 1px solid var(--brand);
+  border-radius: 8px;
+}
+header h1 {
+  color: var(--page-bg); 
+}
+
+  
