@@ -25,3 +25,11 @@ let resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", function () {
   nextMeeting.textContent = "";
 });
+
+let themeButton = document.querySelector("#theme-btn");
+
+themeButton.addEventListener("click", toggleTheme);
+
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}

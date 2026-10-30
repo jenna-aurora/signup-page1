@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --page-bg: aliceblue;
+  --text: black;
+  --brand: cornflowerblue;
+  --outline: tomato; 
+}
 html {
   scroll-behavior: smooth;
 }
@@ -8,16 +14,27 @@ body {
   font-family: Arial, sans-serif;
   margin: 0 24px;
   padding: 0;
+  background-color: var(--page-bg);
+  color: var(--text);
 }
+body.dark {
+  --page-bg: #121212;
+  --text: #e0e0e0;
+  --brand: #bb86fc;
+  --outline: #cf6679;
+}
+body.dark nav a {
+  color: var(--text);
+} 
 h1 {
-  color: cornflowerblue;
+  color: var(--brand);
 }
 .box {
-  border: 1px solid cornflowerblue;
+  border: 1px solid var(--brand);
   padding: 16px;
   margin: 16px 0;
   border-radius: 8px;
-  background-color: aliceblue;
+  background-color: var(--page-bg);
 }
 .cards {
   display: flex;
@@ -27,13 +44,13 @@ h1 {
 
 .card {
   flex: 1 1 200px;
-  border: 2px solid cornflowerblue;
+  border: 2px solid var(--brand);
   padding: 16px;
   border-radius: 8px;
-  background-color: aliceblue;
+  background-color: var(--page-bg);
 }
 .compare * {
-  outline: 2px dashed tomato;
+  outline: 2px dashed var(--outline);
 }
 label {
   display: block;
@@ -50,7 +67,7 @@ textarea {
 }
 
 button {
-  border: 2px dashed tomato;
+  border: 2px dashed var(--outline);
   padding: 10px 20px;
   font: inherit;
 }
@@ -62,7 +79,7 @@ textarea:focus {
 }
 
 input:user-invalid {
-  border: 2px solid tomato;
+  border: 2px solid var(--outline);
 }
 form {
   display: flex;
@@ -82,12 +99,12 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: var(--text); 
   font-weight: bold;
 }
 nav a:hover {
-  background-color: aliceblue;
-  color: black;
+  background-color: var(--brand);
+  color: var(--text);
   padding: 4px;
   border-radius: 6px;
 }
@@ -102,15 +119,15 @@ main {
 .hero {
   text-align: center;
   padding: 64px 24px;
-  background-color: aliceblue;
-  border: 1px solid cornflowerblue;
+  background-color: var(--page-bg);
+  border: 1px solid var(--brand);
   border-radius: 8px;
 }
 .cta {
   display: inline-block;
   margin-top: 16px;
   padding: 12px 24px;
-  background-color: cornflowerblue;
+  background-color: var(--brand);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -119,4 +136,3 @@ main {
   .hero h2 {
     font-size: 3rem;
   }
-  
